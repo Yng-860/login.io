@@ -1,0 +1,88 @@
+/* ==========================================
+   STUDENT LIST PAGE STYLES
+   ========================================== */
+
+/* Main layout setup for the table view */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px 20px;
+}
+
+/* Page heading alignment and color */
+h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* ==========================================
+   TABLE DESIGN
+   ========================================== */
+table {
+    width: 100%;
+    max-width: 1100px;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden; /* Keeps corner rounding smooth */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Table header cells */
+th {
+    background-color: #764ba2;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Table body data cells */
+td {
+    color: #4a5568;
+    font-size: 15px;
+    padding: 14px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap; /* Prevents awkward text breaking */
+}
+
+/* Zebra striping: Alternating background rows for readability */
+tr:nth-child(even) td {
+    background-color: #f8fafc;
+}
+
+/* Interactive row highlighting when hovering */
+tr:hover td {
+    background-color: #edf2f7;
+    color: #1a202c;
+    cursor: default;
+}
+
+/* Subtle styling configuration for ID and Department fields */
+td:nth-child(2) {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+/* Responsive adjustment wrapper: prevents breaking mobile views */
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto; /* Adds a horizontal scrollbar if columns overflow screen width */
+    }
+}
+

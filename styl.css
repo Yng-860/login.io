@@ -1,0 +1,89 @@
+
+   * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+    padding: 20px;
+}
+
+
+.container { 
+    background: white; 
+    padding: 40px; 
+    border-radius: 16px; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); 
+    width: 100%; 
+    max-width: 600px; 
+    text-align: center;
+}
+
+/* Typography */
+h2 { 
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+h3 {
+    color: #764ba2;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+
+.container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: #f8fafc;
+    color: #4a5568;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.25s ease;
+}
+
+.container a:hover {
+    background: #764ba2;
+    color: white;
+    border-color: #764ba2;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.2);
+}
+
+.container a:active {
+    transform: translateY(0);
+}
+
+
+.container a[href="login.php"] {
+    margin-top: 25px;
+    margin-bottom: 0;
+    background: #fff5f5;
+    color: #e53e3e;
+    border-color: #fed7d7;
+}
+
+.container a[href="login.php"]:hover {
+    background: #e53e3e;
+    color: white;
+    border-color: #e53e3e;
+    box-shadow: 0 5px 15px rgba(229, 62, 62, 0.2);
+}

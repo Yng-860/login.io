@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styleas.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="register.php" method="post">
+             <label for="fullname">Full name:</label>
+            <input type="text" name="fullname" id="fullname"><br>
+            <label for="student_id">Student ID:</label>
+            <input type="text" name="student_id" id="student_id"><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone"><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob"><br>
+            <label for="gender">Gender:</label>
+            Male<input type="radio" name="gender" id="gender" value="male">
+            Female<input type="radio" name="gender" id="gender" value="Female"><br>
+            <label for="department">Department:</label>
+            <select name="department" id="department">
+                <option value="123">123</option>
+                <option value="456">456</option>
+                <option value="789">789</option>
+            </select>
+            <label for="semester">Semester:</label>
+            <select name="semester" id="semester">
+                <option value="one">one</option>
+                <option value="two">two</option>
+                <option value="three">three</option>
+            </select>
+            <label for="address">Address:</label>
+            <input type="textarea" name="address" id="address"><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"><br>
+            <label for="confirm_pasword">Confirm Password:</label>
+            <input type="password" name="confirm_pasword" id="confirm_pasword"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
